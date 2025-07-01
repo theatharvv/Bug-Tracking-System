@@ -1,0 +1,52 @@
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+        background: linear-gradient(135deg, #4643dc, #302bd6) !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 0.7rem 1rem;
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.5px;
+    }
+
+    .navbar-brand i {
+        margin-right: 10px;
+        font-size: 1.8rem;
+    }
+
+    .logo-img {
+        height: 38px;
+        margin-right: 10px;
+    }
+
+    .btn-logout {
+        background-color: #ff6b6b;
+        border-color: #ff6b6b;
+        font-weight: 500;
+        padding: 0.375rem 1rem;
+        border-radius: 4px;
+        transition: all 0.2s;
+    }
+
+    .btn-logout:hover {
+        background-color: #ff5252;
+        border-color: #ff5252;
+    }
+
+    h2,
+    h3 {
+        font-weight: 600;
+    }
+
+    #developerEmailsSection{
+        margin-top: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }

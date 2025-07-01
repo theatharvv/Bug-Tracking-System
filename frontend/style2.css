@@ -1,0 +1,149 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.signup-container {
+    max-width: 450px;
+    width: 100%;
+}
+
+.card {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.card-header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 20px 20px;
+    border-bottom: none;
+}
+
+.app-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.card-body {
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.signup-heading {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 25px;
+    font-size: 22px;
+    border-left: 4px solid #764ba2;
+    padding-left: 10px;
+}
+
+.form-control {
+    padding: 12px 15px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+    font-size: 15px;
+    transition: all 0.3s;
+    background-color: #f9f9f9;
+}
+
+.form-control:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 0 0.2rem rgba(118, 75, 162, 0.25);
+    background-color: #fff;
+}
+
+select.form-control {
+    appearance: auto;
+    height: 56px;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border: none;
+    padding: 12px;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.35);
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(118, 75, 162, 0.45);
+    background: linear-gradient(to right, #5a6eea, #663d99);
+}
+
+.form-floating label {
+    padding: 12px 15px;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+#error-msg, #success-msg {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.logo-container {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    background-color: #764ba2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(118, 75, 162, 0.3);
+}
+
+.logo-container svg {
+    width: 35px;
+    height: 35px;
+    fill: white;
+}
+
+.login-link {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.login-link:hover {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+/* For smaller screens */
+@media (max-width: 576px) {
+    .card-body {
+        padding: 20px;
+    }
+    
+    .signup-heading {
+        font-size: 20px;
+    }
+    
+    .form-control {
+        font-size: 14px;
+    }
+}

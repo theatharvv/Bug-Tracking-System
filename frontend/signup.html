@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Bug Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="card">
+            <div class="card-header">
+                <div class="logo-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"/>
+                    </svg>
+                </div>
+                <h2 class="app-title">Bug Tracking System</h2>
+            </div>
+            <div class="card-body">
+                <h4 class="signup-heading">Create your account</h4>
+                <form id="signupForm">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        <label for="email">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" placeholder="Password" required minlength="6">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <select class="form-control" id="role" required>
+                            <option value="" disabled selected>Select a role</option>
+                            <option value="developer">Developer</option>
+                            <option value="tester">Tester</option>
+                            <option value="manager">Manager</option>
+                            <option value="admin">Administrator</option>
+                        </select>
+                        <label for="role">Role</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                    <p id="error-msg" class="text-danger text-center"></p>
+                    <p id="success-msg" class="text-success text-center"></p>
+                </form>
+                <div class="text-center mt-3">
+                    <p>Already have an account? <a href="index.html" class="login-link">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

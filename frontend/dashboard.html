@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Bug Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <svg class="logo-img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#ffffff"
+                        d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z">
+                    </path>
+                </svg>
+                Bug Tracker
+            </a>
+            <button id="logoutBtn" class="btn btn-logout">
+                <i class="fas fa-sign-out-alt me-2"></i>Logout
+            </button>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Welcome to Bug Tracking System</h2>
+        <p id="userRole"></p>
+
+        <div id="bugSection">
+            <h3>Reported Bugs</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Created by</th>
+                        <th>Assigned To</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="bugList">
+                    <!-- Bugs will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Bug Reporting Form (Only for Testers) -->
+        <div id="reportBugForm" style="display: none;">
+            <h3>Report a Bug</h3>
+
+            <form id="bugForm">
+                <input type="text" id="bugTitle" class="form-control mb-2" placeholder="Bug Title" required>
+                <textarea id="bugDescription" class="form-control mb-2" placeholder="Bug Description"
+                    required></textarea>
+                <button type="submit" class="btn btn-primary">Submit Bug</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Developer Emails Section (Only for Admins) -->
+    <div id="developerEmailsSection" style="display: none;">
+        <h3>Developer Emails</h3>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>All Registered Developers</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="developerList">
+                        <!-- Developer emails will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
