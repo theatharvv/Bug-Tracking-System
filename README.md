@@ -1,6 +1,6 @@
 # 🐞 Bug Tracking System
 
-A full-stack bug tracking web application where **testers report bugs**, **developers fix them**, and **admins manage the entire process** — built for real-world team collaboration and role-based access control.
+A full-stack bug tracking web application where **testers report bugs**, **developers fix them**, and **admins manage the entire process** built for real-world team collaboration and role-based access control.
 
 ## 🚀 Tech Stack
 
